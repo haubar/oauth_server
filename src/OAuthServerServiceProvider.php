@@ -4,7 +4,7 @@
  * @package   ithome/
  * @author    Clark <clark@mail.ithome.com.tw>
  * @copyright Copyright (c) Clark
- * @licence   http://mit-license.org/
+ * [see https://github.com/lucadegasperi/oauth2-server-laravel]
  */
 
 namespace Ithome\OAuthServer;
