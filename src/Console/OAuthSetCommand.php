@@ -13,7 +13,7 @@ namespace Ithome\OAuthServer\Console;
 
 use Illuminate\Console\Command;
 
-class OAthSetCommand extends Command
+class OAuthSetCommand extends Command
 {
 
     /**
