@@ -9,7 +9,7 @@
  * @link      https://github.com/lucadegasperi/oauth2-server-laravel
  */
 
-namespace Ithome\OAuthClient\Console;
+namespace Ithome\OAuthServer\Console;
 
 use Illuminate\Console\Command;
 
@@ -21,7 +21,7 @@ class MigrationsCommand extends Command
      *
      * @var string
      */
-    protected $name = 'oauth-client:migrations';
+    protected $name = 'oauth-server:migrations';
 
     /**
      * The console command description.
@@ -46,7 +46,7 @@ class MigrationsCommand extends Command
      */
     public function fire()
     {
-        $this->call('migrate:publish', ['package' => 'ithome/oauth-client']);
+        $this->call('migrate:publish', ['package' => 'ithome/oauthserver']);
         $this->call('dump-autoload');
     }
 }

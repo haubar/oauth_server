@@ -52,8 +52,9 @@ class OAuthServerServiceProvider extends ServiceProvider
     public function registerCommands()
     {
         $this->app->bind('command.oauth-server.controller', 'Ithome\OAuthServer\Console\OAuthControllerCommand');
+        $this->app->bind('command.oauth-server.migrations', 'Ithome\OAuthServer\Console\MigrationsCommand');
 
-        $this->commands('command.oauth-server.controller');
+        $this->commands('command.oauth-server.controller','command.oauth-server.migrations');
     }
 
 
