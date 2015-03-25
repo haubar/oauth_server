@@ -1,7 +1,7 @@
 {
-    "name": "haubar/laravel_artisan_example",
+    "name": "ithome/oauthserver",
     "description": "PHP artisan example for Laravel",
-    "keywords": ["laravel, example, artisan"],
+    "keywords": ["laravel, example, artisan, server"],
     "license": "MIT",
 
     "authors": [
@@ -16,12 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-
+           "Ithome\\OAuthServer\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.8-dev"
+    "autoload-dev": {
+        "psr-4": {
+           "Ithome\\OAuthServer\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

@@ -24,9 +24,7 @@ class OAuthServerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('ithome/oauth-server');
-
-        $this->bootFilters();
+        $this->package('ithome/oauthserver', 'oauthserver', __DIR__.'/');
     }
 
     /**
@@ -41,8 +39,6 @@ class OAuthServerServiceProvider extends ServiceProvider
 
     /**
      * Get the services provided by the provider.
-     * @return string[]
-     * @codeCoverageIgnore
      */
     public function provides()
     {
