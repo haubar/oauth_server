@@ -49,7 +49,7 @@ class OAuthSetCommand extends Command
         $this->call('config:publish', ['package' => 'lucadegasperi/oauth2-server-laravel']);
         $this->call('dump-autoload');
 
-        $this->call('oauth2-server:migrations');
-        $this->call('dump-autoload');
+        $this->call('migrate:publish', ['package' => 'lucadegasperi/oauth2-server-laravel']);
+        $this->call('dump-auto load');
     }
 }
