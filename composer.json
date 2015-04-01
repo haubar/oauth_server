@@ -3,11 +3,10 @@
     "description": "PHP artisan example for Laravel",
     "keywords": ["laravel, example, artisan, server"],
     "license": "MIT",
-
     "authors": [
         {
-            "name": "haubar",
-            "email": "haubarclack@gmail.com"
+            "name": "Clark",
+            "email": "clark@mail.ithome.com.tw"
         }
     ],
     "require": {
@@ -15,11 +14,6 @@
         "lucadegasperi/oauth2-server-laravel": "3.0.*"
     },
     "autoload": {
-        "psr-4": {
-           "Ithome\\OAuthServer\\": "src/"
-        }
-    },
-    "autoload-dev": {
         "psr-4": {
            "Ithome\\OAuthServer\\": "src/"
         }
